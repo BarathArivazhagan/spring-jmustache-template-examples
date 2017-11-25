@@ -1,5 +1,7 @@
 package com.barath.app.entity;
 
+import java.util.Map;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -18,11 +20,26 @@ public class CodeGenEntityProperty {
     
     private boolean isList;
     
-    private boolean isSet;   
+    private boolean isSet; 
+    
+    private Map<String,Object> relation;
+    
+    
+    
+    
+    
     
     
  
-    @JsonProperty(value="isMap")  
+    public Map<String, Object> getRelation() {
+		return relation;
+	}
+
+	public void setRelation(Map<String, Object> relation) {
+		this.relation = relation;
+	}
+
+	@JsonProperty(value="isMap")  
     public boolean isMap() {
 		return isMap;
 	}
