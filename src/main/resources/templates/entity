@@ -1,0 +1,18 @@
+
+
+
+
+public class {{className}}{
+
+
+
+	{{#properties}}
+	private {{type}} {{key}};
+	
+	public {{type}} get{{Key}}
+	
+	{{/properties}}
+
+
+
+}
